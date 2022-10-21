@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    //id 'maven'
+    id 'maven-publish'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    //implementation "cn.hutool:hutool-all:${hutoolVersion}"
+    implementation "org.apache.commons:commons-math3:${commonsmath3Version}"
+    implementation "gov.nist.math:jama:${jamaVersion}"
+
+}
